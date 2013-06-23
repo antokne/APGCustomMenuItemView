@@ -12,4 +12,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (weak) IBOutlet NSMenu *statusMenu;
+
+- (IBAction)itemSelected:(id)sender;
 @end

@@ -13,6 +13,14 @@
 		E469A6AE177679C900F72BC9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E469A6AC177679C900F72BC9 /* Credits.rtf */; };
 		E469A6B1177679C900F72BC9 /* APGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E469A6B0177679C900F72BC9 /* APGAppDelegate.m */; };
 		E469A6B4177679C900F72BC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E469A6B2177679C900F72BC9 /* MainMenu.xib */; };
+		E469A6BC17767A7400F72BC9 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = E469A6BA17767A7400F72BC9 /* play.png */; };
+		E469A6BD17767A7400F72BC9 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E469A6BB17767A7400F72BC9 /* play@2x.png */; };
+		E469A6C617767AA500F72BC9 /* APGCustomMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E469A6C317767A8000F72BC9 /* APGCustomMenuViewController.m */; };
+		E469A6C717767AA800F72BC9 /* APGCustomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E469A6C117767A8000F72BC9 /* APGCustomMenuView.m */; };
+		E469A6C817767AAA00F72BC9 /* APGCustomMenuTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E469A6BF17767A8000F72BC9 /* APGCustomMenuTextField.m */; };
+		E469A6CB17767CF000F72BC9 /* clockbw-tiny.png in Resources */ = {isa = PBXBuildFile; fileRef = E469A6C917767CF000F72BC9 /* clockbw-tiny.png */; };
+		E469A6CC17767CF000F72BC9 /* clockbw-tiny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E469A6CA17767CF000F72BC9 /* clockbw-tiny@2x.png */; };
+		E469A6CD17767EA300F72BC9 /* APGCustomMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E469A6C417767A8000F72BC9 /* APGCustomMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,17 @@
 		E469A6AF177679C900F72BC9 /* APGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APGAppDelegate.h; sourceTree = "<group>"; };
 		E469A6B0177679C900F72BC9 /* APGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APGAppDelegate.m; sourceTree = "<group>"; };
 		E469A6B3177679C900F72BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E469A6BA17767A7400F72BC9 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = artwork/play.png; sourceTree = "<group>"; };
+		E469A6BB17767A7400F72BC9 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "artwork/play@2x.png"; sourceTree = "<group>"; };
+		E469A6BE17767A8000F72BC9 /* APGCustomMenuTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = APGCustomMenuTextField.h; path = classes/customMenuView/APGCustomMenuTextField.h; sourceTree = "<group>"; };
+		E469A6BF17767A8000F72BC9 /* APGCustomMenuTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = APGCustomMenuTextField.m; path = classes/customMenuView/APGCustomMenuTextField.m; sourceTree = "<group>"; };
+		E469A6C017767A8000F72BC9 /* APGCustomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = APGCustomMenuView.h; path = classes/customMenuView/APGCustomMenuView.h; sourceTree = "<group>"; };
+		E469A6C117767A8000F72BC9 /* APGCustomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = APGCustomMenuView.m; path = classes/customMenuView/APGCustomMenuView.m; sourceTree = "<group>"; };
+		E469A6C217767A8000F72BC9 /* APGCustomMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = APGCustomMenuViewController.h; path = classes/customMenuView/APGCustomMenuViewController.h; sourceTree = "<group>"; };
+		E469A6C317767A8000F72BC9 /* APGCustomMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = APGCustomMenuViewController.m; path = classes/customMenuView/APGCustomMenuViewController.m; sourceTree = "<group>"; };
+		E469A6C417767A8000F72BC9 /* APGCustomMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = APGCustomMenuViewController.xib; path = classes/customMenuView/APGCustomMenuViewController.xib; sourceTree = "<group>"; };
+		E469A6C917767CF000F72BC9 /* clockbw-tiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clockbw-tiny.png"; path = "artwork/clockbw-tiny.png"; sourceTree = "<group>"; };
+		E469A6CA17767CF000F72BC9 /* clockbw-tiny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clockbw-tiny@2x.png"; path = "artwork/clockbw-tiny@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +101,7 @@
 		E469A6A3177679C900F72BC9 /* CustomMenuItemViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				E469A6C517767A8300F72BC9 /* Custom Menu */,
 				E469A6AF177679C900F72BC9 /* APGAppDelegate.h */,
 				E469A6B0177679C900F72BC9 /* APGAppDelegate.m */,
 				E469A6B2177679C900F72BC9 /* MainMenu.xib */,
@@ -93,6 +113,10 @@
 		E469A6A4177679C900F72BC9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E469A6C917767CF000F72BC9 /* clockbw-tiny.png */,
+				E469A6CA17767CF000F72BC9 /* clockbw-tiny@2x.png */,
+				E469A6BA17767A7400F72BC9 /* play.png */,
+				E469A6BB17767A7400F72BC9 /* play@2x.png */,
 				E469A6A5177679C900F72BC9 /* CustomMenuItemViewExample-Info.plist */,
 				E469A6A6177679C900F72BC9 /* InfoPlist.strings */,
 				E469A6A9177679C900F72BC9 /* main.m */,
@@ -100,6 +124,20 @@
 				E469A6AC177679C900F72BC9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E469A6C517767A8300F72BC9 /* Custom Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E469A6BE17767A8000F72BC9 /* APGCustomMenuTextField.h */,
+				E469A6BF17767A8000F72BC9 /* APGCustomMenuTextField.m */,
+				E469A6C017767A8000F72BC9 /* APGCustomMenuView.h */,
+				E469A6C117767A8000F72BC9 /* APGCustomMenuView.m */,
+				E469A6C217767A8000F72BC9 /* APGCustomMenuViewController.h */,
+				E469A6C317767A8000F72BC9 /* APGCustomMenuViewController.m */,
+				E469A6C417767A8000F72BC9 /* APGCustomMenuViewController.xib */,
+			);
+			name = "Custom Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +192,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E469A6CD17767EA300F72BC9 /* APGCustomMenuViewController.xib in Resources */,
 				E469A6A8177679C900F72BC9 /* InfoPlist.strings in Resources */,
 				E469A6AE177679C900F72BC9 /* Credits.rtf in Resources */,
 				E469A6B4177679C900F72BC9 /* MainMenu.xib in Resources */,
+				E469A6BC17767A7400F72BC9 /* play.png in Resources */,
+				E469A6BD17767A7400F72BC9 /* play@2x.png in Resources */,
+				E469A6CB17767CF000F72BC9 /* clockbw-tiny.png in Resources */,
+				E469A6CC17767CF000F72BC9 /* clockbw-tiny@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +212,9 @@
 			files = (
 				E469A6AA177679C900F72BC9 /* main.m in Sources */,
 				E469A6B1177679C900F72BC9 /* APGAppDelegate.m in Sources */,
+				E469A6C617767AA500F72BC9 /* APGCustomMenuViewController.m in Sources */,
+				E469A6C717767AA800F72BC9 /* APGCustomMenuView.m in Sources */,
+				E469A6C817767AAA00F72BC9 /* APGCustomMenuTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

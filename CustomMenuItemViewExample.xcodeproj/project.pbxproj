@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E400080F1782724E000B0DFF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = E400080D1782724E000B0DFF /* pause.png */; };
+		E40008101782724E000B0DFF /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E400080E1782724E000B0DFF /* pause@2x.png */; };
 		E469A69E177679C900F72BC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E469A69D177679C900F72BC9 /* Cocoa.framework */; };
 		E469A6A8177679C900F72BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E469A6A6177679C900F72BC9 /* InfoPlist.strings */; };
 		E469A6AA177679C900F72BC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E469A6A9177679C900F72BC9 /* main.m */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E400080D1782724E000B0DFF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = artwork/pause.png; sourceTree = "<group>"; };
+		E400080E1782724E000B0DFF /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "artwork/pause@2x.png"; sourceTree = "<group>"; };
 		E469A69A177679C900F72BC9 /* CustomMenuItemViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMenuItemViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E469A69D177679C900F72BC9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E469A6A0177679C900F72BC9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -113,6 +117,8 @@
 		E469A6A4177679C900F72BC9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E400080D1782724E000B0DFF /* pause.png */,
+				E400080E1782724E000B0DFF /* pause@2x.png */,
 				E469A6C917767CF000F72BC9 /* clockbw-tiny.png */,
 				E469A6CA17767CF000F72BC9 /* clockbw-tiny@2x.png */,
 				E469A6BA17767A7400F72BC9 /* play.png */,
@@ -200,6 +206,8 @@
 				E469A6BD17767A7400F72BC9 /* play@2x.png in Resources */,
 				E469A6CB17767CF000F72BC9 /* clockbw-tiny.png in Resources */,
 				E469A6CC17767CF000F72BC9 /* clockbw-tiny@2x.png in Resources */,
+				E400080F1782724E000B0DFF /* pause.png in Resources */,
+				E40008101782724E000B0DFF /* pause@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +358,7 @@
 				E469A6B9177679C900F72BC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,29 +14,5 @@
 @end
 
 @implementation APGCustomMenuViewController
-{
-  NSDateFormatter *formatter;
-}
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Initialization code here.
-      formatter = [[NSDateFormatter alloc] init];
-      [formatter setTimeStyle:NSDateFormatterNoStyle];
-      [formatter setDateStyle:NSDateFormatterMediumStyle];
-    }
-    
-    return self;
-}
-
-
-
-- (IBAction)postAction:(id)sender
-{
-  
-  NSLog(@"post action clicked");
-
-}
 
 @end

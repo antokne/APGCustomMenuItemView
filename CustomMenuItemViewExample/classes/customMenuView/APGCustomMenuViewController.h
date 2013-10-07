@@ -12,9 +12,6 @@
 
 @interface APGCustomMenuViewController : NSViewController
 
-@property (weak) IBOutlet NSTextField *titleTextField;
-@property (weak) IBOutlet NSTextField *dateTextField;
-@property (weak) IBOutlet NSTextField *timeTextField;
 
 
 

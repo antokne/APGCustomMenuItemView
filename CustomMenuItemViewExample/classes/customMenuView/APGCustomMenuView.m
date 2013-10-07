@@ -29,34 +29,6 @@
 	return self;
 }
 
--(void)setTitleTextResizeIfNeeded:(NSString *)newTitle
-{
-
-	BOOL smallEnough = NO;
-	CGFloat currentPointSize = 16;
-
-	while (! smallEnough)
-	{
-		NSFont *font = [NSFont fontWithName:_titleTextField.font.fontName size:currentPointSize];
-
-		NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-
-		NSSize size = [_titleTextField.stringValue sizeWithAttributes:attributes];
-
-		if (size.width <= _titleTextField.frame.size.width)
-		{
-			smallEnough = YES;
-			_titleTextField.font = font;
-		}
-		else
-		{
-			currentPointSize--;
-		}
-	}
-
-	_titleTextField.stringValue = newTitle;
-}
-
 -(void)updateTrackingAreas
 {
 	[self setUpTrackingArea];
@@ -91,50 +63,11 @@
 
 }
 
--(float)widthOfView
-{
-	float notepading = 10;
-	float width = 300 + notepading;
-
-
-	NSFont *font = _titleTextField.font;
-
-	NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil];
-
-	NSSize size = [_titleTextField.stringValue sizeWithAttributes:attributes];
-	if (size.width > (238 + notepading))
-	{
-		width = size.width + 62 + notepading;
-	}
-
-	return width;
-}
-
 -(void)setDisabled:(BOOL)disabled
 {
 	_disabled = disabled;
 
 	self.highlight = NO;
-}
-
-- (void)viewWillMoveToSuperview:(NSView *)newSuperview
-{
-	//	NSLog(@"viewWillMoveToSuperview");
-	[super viewWillMoveToSuperview:newSuperview];
-}
-
-- (BOOL)acceptsFirstMouse:(NSEvent *)theEvent
-{
-  return YES;
-}
-
-// will clear any select menu options hanging around...
-- (void)viewWillMoveToWindow:(NSWindow *)window
-{
-	//	NSLog(@"viewWillMoveToWindow");
-	self.highlight = NO;
-
-  [super viewWillMoveToWindow:window];
 }
 
 - (void)mouseUp:(NSEvent *)theEvent
@@ -193,20 +126,8 @@
 	});
 
 	// maybe do something...
-
+	NSLog(@"mouseDown %@", theEvent);
 }
-
-- (void)menuWillOpen:(NSMenu *)menu
-{
-	self.highlight = YES;
-}
-
-- (void)menuDidClose:(NSMenu *)menu
-{
-	self.highlight = NO;
-
-}
-
 
 - (void)drawRect:(NSRect)rect
 {

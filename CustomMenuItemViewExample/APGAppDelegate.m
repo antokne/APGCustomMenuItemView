@@ -22,7 +22,9 @@
   // Insert code here to initialize your application
   [self createStatusMenu];
   
-  [self buildCustomMenuItems];
+  [self buildCustomMenuItems:_statusMenu];
+  [self buildCustomMenuItems:_popupMenu];
+  [self buildCustomMenuItems:_customMenu];
 }
 
 
@@ -51,7 +53,7 @@
 	[_statusItem setHighlightMode:YES];
 }
 
--(void)buildCustomMenuItems
+-(void)buildCustomMenuItems:(NSMenu *)menu
 {
   for (int i = 0; i < 10; i++)
   {
@@ -61,7 +63,7 @@
     APGCustomMenuViewController *postMenuVC = [[APGCustomMenuViewController alloc] initWithNibName:@"APGCustomMenuViewController" bundle:nil];
     [item setView:postMenuVC.view];
     
-    [_statusMenu addItem:item];
+    [menu addItem:item];
     
   }
 

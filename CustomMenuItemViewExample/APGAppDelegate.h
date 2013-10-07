@@ -13,6 +13,8 @@
 @property (assign) IBOutlet NSWindow *window;
 
 @property (weak) IBOutlet NSMenu *statusMenu;
+@property (weak) IBOutlet NSMenu *popupMenu;
+@property (weak) IBOutlet NSMenu *customMenu;
 
 - (IBAction)itemSelected:(id)sender;
 @end

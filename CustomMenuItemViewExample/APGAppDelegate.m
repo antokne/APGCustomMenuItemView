@@ -53,7 +53,7 @@
 
 -(void)buildCustomMenuItems
 {
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 10; i++)
   {
     NSString *title = [NSString stringWithFormat:@"Title %d", i];
     NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:title action:@selector(postToWorkflowMaxSelected:) keyEquivalent:@""];

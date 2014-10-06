@@ -13,7 +13,7 @@
 
 @implementation APGCustomMenuView
 {
-	NSTrackingArea *trackingArea;
+	NSTrackingArea *trackingArea, *trackingArea2;
 }
 
 @synthesize highlight = _highlight;
@@ -31,9 +31,9 @@
 
 -(void)updateTrackingAreas
 {
-	[self setUpTrackingArea];
-
 	[super updateTrackingAreas];
+
+	[self setUpTrackingArea];
 }
 
 -(void)setUpTrackingArea
@@ -42,12 +42,18 @@
 	{
 		[self removeTrackingArea:trackingArea];
 	}
+	if (trackingArea2) {
+		[self removeTrackingArea:trackingArea2];
+	}
 
-	int opts = (NSTrackingMouseEnteredAndExited | NSTrackingActiveAlways | NSTrackingEnabledDuringMouseDrag);
+	int opts = (NSTrackingMouseMoved | NSTrackingActiveAlways | NSTrackingMouseEnteredAndExited | NSTrackingEnabledDuringMouseDrag);
 	trackingArea = [ [NSTrackingArea alloc] initWithRect:[self bounds] options:opts	owner:self userInfo:nil];
 	[self addTrackingArea:trackingArea];
 
 	NSLog(@"update tracking area %@", trackingArea);
+
+	trackingArea2 = [[NSTrackingArea alloc] initWithRect:self.bounds options:(NSTrackingMouseEnteredAndExited|NSTrackingActiveAlways | NSTrackingEnabledDuringMouseDrag) owner:self userInfo:nil];
+	[self addTrackingArea:trackingArea2];
 
 	NSPoint mouseLocation = [[self window] mouseLocationOutsideOfEventStream];
 	mouseLocation = [self convertPoint: mouseLocation	fromView: nil];
@@ -89,8 +95,6 @@
 	if (_disabled) {
 		return;
 	}
-
-	// do something here
 
   self.highlight = YES;
 }
@@ -134,11 +138,8 @@
 	if (_highlight)
 	{
 		[NSGraphicsContext saveGraphicsState];
-
 		[[NSColor selectedMenuItemColor ] setFill];
-
 		[[NSGraphicsContext currentContext] setPatternPhase:NSMakePoint(0, 0)];
-
 		NSRectFill(self.bounds);
 		[NSGraphicsContext restoreGraphicsState];
 
@@ -159,9 +160,9 @@
 		}
 		else
 		{
-			_titleTextField.textColor = [NSColor blackColor];
-			_dateTextField.textColor = [NSColor darkGrayColor];
-			_timeTextField.textColor = [NSColor darkGrayColor];
+			_titleTextField.textColor = [NSColor labelColor];
+			_dateTextField.textColor = [NSColor secondaryLabelColor];
+			_timeTextField.textColor = [NSColor secondaryLabelColor];
 		}
 	}
 }
